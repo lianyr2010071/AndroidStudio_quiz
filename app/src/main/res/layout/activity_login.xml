@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvjudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Form Login"
+        android:layout_marginTop="15sp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+         />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="yes"
+        android:layout_margin="15dp"
+        android:padding="20dp"
+        android:id="@+id/ml1"
+        android:layout_below="@id/tvjudul" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_margin="15dp"
+            android:id="@+id/edemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:background="#0000"
+            />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="yes"
+        android:layout_margin="15dp"
+        android:padding="20dp"
+        android:id="@+id/ml2"
+        android:layout_below="@id/tvjudul" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edpasword"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:background="#0000"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/ml2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true" >
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/btnlogin"
+            />
+
+        <Button
+            android:id="@+id/btnbatal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Batal"
+            android:layout_marginLeft="35sp"
+            />
+
+
+    </LinearLayout>
+    </RelativeLayout>
